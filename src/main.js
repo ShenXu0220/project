@@ -7,6 +7,11 @@ import './assets/css/global.css'
 // 导入图标
 import './assets/font/iconfont.css'
 
+import axios from 'axios'
+//配置请求的根路径  
+axios.defaults.baseURL = 'https://api.naccl.top/vue/shop/api/private/v1/'
+Vue.prototype.$http = axios
+
 Vue.config.productionTip = false
 
 new Vue({
