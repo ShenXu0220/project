@@ -6,6 +6,7 @@ import './plugins/element.js'
 import './assets/css/global.css'
 import TreeTable from 'vue-table-with-tree-grid'
 
+
 // 导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
 // // 导入富文本编辑器对应的样式
@@ -51,6 +52,9 @@ Vue.use(VueQuillEditor)
 import dayjs from 'dayjs'
 Vue.prototype.$dayjs = dayjs
 
+// echars图表
+import * as echarts from 'echarts';
+Vue.prototype.$echarts = echarts
 
 new Vue({
   router,
