@@ -179,7 +179,7 @@ export default {
       //   静态属性列表数据
       onlyTabData: [],
       //   上传的图片的URL
-      uploadURL: "https://api.naccl.top/vue/shop/api/private/v1/upload",
+      uploadURL: "http://timemeetyou.com:8889/api/private/v1/upload",
       //   图片上传组件的headers请求头对象
       headerObj: {
         Authorization: window.sessionStorage.getItem("token"),

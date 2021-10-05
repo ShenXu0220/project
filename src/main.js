@@ -18,7 +18,8 @@ import './assets/fonts/iconfont.css'
 
 import axios from 'axios'
 //配置请求的根路径  
-axios.defaults.baseURL = 'https://api.naccl.top/vue/shop/api/private/v1/'
+// axios.defaults.baseURL = 'https://api.naccl.top/vue/shop/api/private/v1/'
+axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
 axios.interceptors.request.use(config => {
   // console.log(config)
   config.headers.Authorization = window.sessionStorage.getItem('token')
